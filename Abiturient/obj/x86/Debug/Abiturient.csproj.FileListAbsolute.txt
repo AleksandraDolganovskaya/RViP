@@ -86,3 +86,14 @@ C:\Users\Шурупчик\Documents\RViP\repo\Abiturient\obj\x86\Debug\Abiturien
 C:\Users\Шурупчик\Documents\RViP\repo\Abiturient\obj\x86\Debug\Abiturient.csproj.GenerateResource.Cache
 C:\Users\Шурупчик\Documents\RViP\repo\Abiturient\bin\Debug\Abiturient.exe
 C:\Users\Шурупчик\Documents\RViP\repo\Abiturient\bin\Debug\Abiturient.pdb
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.csprojResolveAssemblyReference.cache
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Abiturient.resources
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Form1.resources
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Priority.resources
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Properties.Resources.resources
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Specialty.resources
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Spec_Subj.resources
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Stud_Subj.resources
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Subject.resources
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.csproj.GenerateResource.Cache
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.exe
