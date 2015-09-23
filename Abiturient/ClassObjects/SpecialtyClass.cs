@@ -9,8 +9,7 @@ namespace Abiturient
     {
         public int ID { get; set; }
         public string Specialty { get; set; }
-        public int Amount { get; set; }
-        //public List<SubjectClass> listSubj = new List<SubjectClass>();
+        public int Amount { get; set; } 
         public List<ListAbiturienClass> listAbitur { get; set; }
     }
 }

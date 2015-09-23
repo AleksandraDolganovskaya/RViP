@@ -46,5 +46,11 @@ namespace Abiturient
             generation_class.writerTableStaudent1(nameTable, DGV_specialty);
 
         }
+
+        private void btn_del_Click(object sender, EventArgs e)
+        {
+            generation_class.Delete("Specialty");
+            DGV_specialty.Rows.Clear();
+        }
     }
 }

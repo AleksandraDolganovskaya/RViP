@@ -60,7 +60,7 @@ namespace Abiturient
                 int[] masspec = new int[3];
                 for (int j = 0; j < 3; j++)
                 {
-                    masspec[j] = rn.Next(min, max);
+                    masspec[j] = rn.Next(min, max+1);
                     if (j > 0)
                     {
                         int temp = masspec[j];

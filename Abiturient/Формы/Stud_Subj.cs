@@ -55,7 +55,7 @@ namespace Abiturient
             Random rn= new Random();
             int[] mas_sub_3 = new int[5];//Предположим, что каждый студент сдает все 5 предметов*/
 
-            while (read_stud.Read())
+            /*while (read_stud.Read())
             {
                 for (int j = 0; j < 3; j++)
                 {
@@ -77,21 +77,21 @@ namespace Abiturient
                     generation_class.Stud_Sub("AbitSubj", "id_abit", "id_subj", Convert.ToInt32(read_stud.GetValue(0).ToString()), mas_sub_3[j]);
                 }
 
+            }*/
+            while (read_stud.Read())
+            {
+                //Предположим, что каждый студент сдает все 5 предметов
+                mas_sub_3[0] = min;
+                mas_sub_3[1] = min + 1;
+                //mas_sub_3[2] = rn.Next(min + 2, max);
+                mas_sub_3[2] = min + 2;
+                mas_sub_3[3] = min + 3;
+                mas_sub_3[4] = max;
+                for (int j = 0; j < mas_sub_3.Length; j++)
+                {
+                    generation_class.Stud_Sub("AbitSubj", "id_abit", "id_subj", Convert.ToInt32(read_stud.GetValue(0).ToString()), mas_sub_3[j]);
+                }
             }
-            //while (read_stud.Read())
-            //{
-            //    //Предположим, что каждый студент сдает все 5 предметов
-            //    mas_sub_3[0] = min;
-            //    mas_sub_3[1] = min + 1;
-            //    //mas_sub_3[2] = rn.Next(min + 2, max);
-            //    mas_sub_3[2] = min + 2;
-            //    mas_sub_3[3] = min + 3;
-            //    mas_sub_3[4] = max;
-            //    for (int j = 0; j < mas_sub_3.Length; j++)
-            //    {
-            //        //generation_class.Stud_Sub("Student_subj", "ID_student", "ID_subj", "Scores", Convert.ToInt32(read_stud.GetValue(0).ToString()), mas_sub_3[j], Convert.ToInt32(rn.Next(50, 80)));
-            //    }
-            //}
 
             generation_class.writerTableStudentSubj("AbitSubj", DGV_studsubj);
         }
@@ -110,7 +110,7 @@ namespace Abiturient
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //generation_class.Delete("Student_subj");
+            generation_class.Delete("AbitSubj");
             DGV_studsubj.Rows.Clear();
         }
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Abiturient
 {
@@ -10,6 +11,7 @@ namespace Abiturient
     {
         protected string connectionstring;
         protected DB db;
+        protected int amount = 0;
         List<SpecialtyClass> listSpecWithAbit;
         List<ListAbiturienClass> listAbit;
 
@@ -25,12 +27,27 @@ namespace Abiturient
         {
             createListsSpecWithAbit();
             sortLists();
+            //selectPrior(1);
             return listSpecWithAbit;
         }
 
         public List<SpecialtyClass> writerNewLists()
         {
-            selectPrior(1);
+            do
+            {
+                selectPrior(1);
+            }
+            while (amount != 0);
+            do
+            {
+                selectPrior(2);
+                do
+                {
+                    selectPrior(1);
+                }
+                while (amount != 0);
+            }
+            while (amount != 0);
             return listSpecWithAbit;
         }
 
@@ -74,42 +91,72 @@ namespace Abiturient
 
         private void selectPrior(int prior)
         {
-            foreach (var i in listSpecWithAbit)
+            SpecialtyClass[] spec_array = listSpecWithAbit.ToArray();
+            amount = 0;
+            int specCount = 0;
+            do
             {
                 int studCount = 0;
-                foreach(var j in i.listAbitur)
+                ListAbiturienClass[] array = spec_array[0].listAbitur.ToArray();
+                for (int j = 0; j < array.Length; j++)
                 {
-                    if(studCount!=i.Amount)
-                    if (j.Prior == prior)
+                    if (studCount != spec_array[0].Amount)
                     {
-                        deleteAbitur(j.ID, i.ID);
+                        if (array[j].Prior == prior)
+                        {
+                            if(array[j].Prior == 1)
+                                deleteAbitur(array[j].ID, spec_array);
+                            else
+                                deleteAbitur2(array[j].ID, spec_array);
+                        }
+                        studCount++;
                     }
-                    studCount++;
+                }
+
+
+                SpecialtyClass temp = spec_array[0];
+
+                for (int k = 0; k < spec_array.Length - 1; k++)
+                {
+                    spec_array[k] = spec_array[k + 1];
+                }
+                spec_array[spec_array.Length - 1] = temp;
+                specCount++;
+            } while (specCount != spec_array.Length);
+        }
+
+        private void deleteAbitur(int id_abit, SpecialtyClass[] spec_array)
+        {
+            for (int i = 1; i < spec_array.Length; i++ )
+            {
+                    foreach (var j in spec_array[i].listAbitur)
+                    {
+                        if (j.ID == id_abit)
+                        {
+                            spec_array[i].listAbitur.Remove(j);
+                            amount++;
+                            break;
+                        }
+                    }
+            }
+        }
+
+        private void deleteAbitur2(int id_abit, SpecialtyClass[] spec_array)
+        {
+            for (int i = 1; i < spec_array.Length; i++)
+            {
+                foreach (var j in spec_array[i].listAbitur)
+                {
+                    if (j.ID == id_abit && j.Prior == 3)
+                    {
+                        spec_array[i].listAbitur.Remove(j);
+                        amount++;
+                        break;
+                    }
                 }
             }
         }
 
-        private void deleteAbitur(int id_abit, int id_spec)
-        {
-            foreach (var i in listSpecWithAbit)
-            {
-                if (i.ID != id_spec)
-                {
-                    delete(id_abit, i.listAbitur);
-                }
-            }
-        }
 
-        private void delete(int id_abit, List<ListAbiturienClass> i)
-        {
-            foreach (var j in i)
-            {
-                if (j.ID == id_abit)
-                {
-                    i.Remove(j);
-                    break;
-                }
-            }
-        }
     }
 }

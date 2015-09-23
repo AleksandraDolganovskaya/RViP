@@ -140,13 +140,13 @@ namespace Abiturient
                     }
                 i++;
 
-                if (dgv.RowCount != 0)
+             /*  if (dgv.RowCount != 0)
                {
                    for (int l = 0; l < k.Amount; l++)
                    {
                        dgv.Rows[l].DefaultCellStyle.BackColor = Color.LightCoral;
                    }
-               }
+               }*/
             }
         }
 
