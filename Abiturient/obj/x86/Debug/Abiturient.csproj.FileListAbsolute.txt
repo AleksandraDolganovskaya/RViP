@@ -104,7 +104,3 @@ C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abit
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Stud_Subj.resources
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Subject.resources
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.csproj.GenerateResource.Cache
-<<<<<<< HEAD
-C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.exe
-=======
->>>>>>> f8566856e5fe2d4fa4046a7c06ab9ded8b51a060

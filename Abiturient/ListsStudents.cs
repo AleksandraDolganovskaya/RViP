@@ -25,6 +25,11 @@ namespace Abiturient
         {
             createListsSpecWithAbit();
             sortLists();
+            return listSpecWithAbit;
+        }
+
+        public List<SpecialtyClass> writerNewLists()
+        {
             selectPrior(1);
             return listSpecWithAbit;
         }

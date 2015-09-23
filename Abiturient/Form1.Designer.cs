@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_srateList = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BTN_priority = new System.Windows.Forms.Button();
@@ -43,9 +44,15 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.btn_srateList = new System.Windows.Forms.Button();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -64,6 +71,16 @@
             this.groupBox1.Size = new System.Drawing.Size(1007, 94);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // btn_srateList
+            // 
+            this.btn_srateList.Location = new System.Drawing.Point(625, 65);
+            this.btn_srateList.Name = "btn_srateList";
+            this.btn_srateList.Size = new System.Drawing.Size(187, 23);
+            this.btn_srateList.TabIndex = 7;
+            this.btn_srateList.Text = "Формирование списков";
+            this.btn_srateList.UseVisualStyleBackColor = true;
+            this.btn_srateList.Click += new System.EventHandler(this.btn_srateList_Click);
             // 
             // button1
             // 
@@ -158,7 +175,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 122);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1001, 410);
+            this.tabControl1.Size = new System.Drawing.Size(481, 410);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -166,7 +183,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(993, 384);
+            this.tabPage1.Size = new System.Drawing.Size(473, 384);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Спец1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -208,27 +225,82 @@
             this.tabPage5.Text = "Спец5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // btn_srateList
+            // tabControl2
             // 
-            this.btn_srateList.Location = new System.Drawing.Point(625, 65);
-            this.btn_srateList.Name = "btn_srateList";
-            this.btn_srateList.Size = new System.Drawing.Size(187, 23);
-            this.btn_srateList.TabIndex = 7;
-            this.btn_srateList.Text = "Формирование списков";
-            this.btn_srateList.UseVisualStyleBackColor = true;
-            this.btn_srateList.Click += new System.EventHandler(this.btn_srateList_Click);
+            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage8);
+            this.tabControl2.Controls.Add(this.tabPage9);
+            this.tabControl2.Controls.Add(this.tabPage10);
+            this.tabControl2.Location = new System.Drawing.Point(532, 122);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(481, 410);
+            this.tabControl2.TabIndex = 2;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(473, 384);
+            this.tabPage6.TabIndex = 0;
+            this.tabPage6.Text = "Спец1";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(473, 384);
+            this.tabPage7.TabIndex = 1;
+            this.tabPage7.Text = "Спец2";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(473, 384);
+            this.tabPage8.TabIndex = 2;
+            this.tabPage8.Text = "Спец3";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(473, 384);
+            this.tabPage9.TabIndex = 3;
+            this.tabPage9.Text = "Спец4";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(473, 384);
+            this.tabPage10.TabIndex = 4;
+            this.tabPage10.Text = "Спец5";
+            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1031, 544);
+            this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Приемная комиссия";
             this.groupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -251,6 +323,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_srateList;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.TabPage tabPage10;
     }
 }
 
