@@ -14,7 +14,7 @@ namespace Abiturient
 {
     public partial class Form1 : Form
     {
-        public string connectionstring = @"Data Source=C:\Users\user\Documents\RViP\mydb.sqlite;Version=3";
+        public string connectionstring = @"Data Source=C:\Users\Шурупчик\Documents\RViP_abit\RViP\mydb.sqlite;Version=3";
         
         public Form1()
         {
@@ -60,7 +60,7 @@ namespace Abiturient
         private void button2_Click(object sender, EventArgs e)
         {
             Generation_Class generation_class = new Generation_Class(connectionstring);
-            SQLiteDataReader read_spec = generation_class.writerTable("Specialty");
+            /*SQLiteDataReader read_spec = generation_class.writerTable("Specialty");
 
             SQLiteDataReader read_spiski = generation_class.writerTable("AbitSpec");
             List<List> list_spisok = new List<List>();
@@ -74,8 +74,43 @@ namespace Abiturient
             {
                 listSpec.Add(new ListSpec { ID = Convert.ToInt32(read_spec.GetValue(0)), Specialty = (read_spec.GetValue(1)).ToString(), Amount = Convert.ToInt32(read_spec.GetValue(2)) });
             }
-
+            */
+            ListsStudents listStut = new ListsStudents(connectionstring);
+            List<SpecialtyClass> listsStudent = listStut.WriterLists();
             int i = 0;
+            foreach (var k in listsStudent)
+            {
+                DataGridView dgv = new DataGridView();
+                DataGridView dgv1 = new DataGridView();
+                dgv.Name = "DGV" + i.ToString();
+                dgv.Width = 500;
+                dgv.Height = 500;
+                dgv.Left = 0;
+                dgv.Top = 0;
+                dgv.Columns.Add("123", "Номер_студента");
+                dgv.Columns.Add("123", "Приоритет");
+                dgv.Columns.Add("123", "Сумма баллов");
+                tabControl1.TabPages[i].Controls.Add(dgv);
+                dgv.AllowUserToAddRows = false;
+                dgv.AllowUserToDeleteRows = false;
+
+                
+                    foreach (var j in k.listAbitur)
+                    {
+                        dgv.Rows.Add(j.ID, j.Prior, j.Scores);
+
+                    }
+                i++;
+
+                /*if (dgv.RowCount != 0)
+                {
+                    for (int l = 0; l < k.Amount; l++)
+                    {
+                        dgv.Rows[l].DefaultCellStyle.BackColor = Color.LightCoral;
+                    }
+                }*/
+            } 
+            /*int i = 0;
             foreach (var k in listSpec)
             {
                 DataGridView dgv = new DataGridView();
@@ -100,16 +135,22 @@ namespace Abiturient
 
                 }
                 i++;
-            }  
+            } */ 
         }
 
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SQLiteConnection.CreateFile(@"C:\Users\user\Documents\RViP\mydb.sqlite");
+            SQLiteConnection.CreateFile(@"C:\Users\Шурупчик\Documents\RViP_abit\RViP\mydb.sqlite");
             DB db = new DB(connectionstring);
             db.createTables();
+        }
+
+        private void btn_srateList_Click(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }

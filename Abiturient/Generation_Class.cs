@@ -90,7 +90,7 @@ namespace Abiturient
             SQLiteDataAdapter adapter = new SQLiteDataAdapter("SELECT * from " + nameTable, con);
             for (int i = 0; i < n; i++)
             {
-                adapter.InsertCommand = new SQLiteCommand("INSERT INTO " + nameTable + " (" + parametr +","+parametr2+ @") VALUES ('" + name + i.ToString() +"','"+rn.Next(20,30)+ @"')", con);
+                adapter.InsertCommand = new SQLiteCommand("INSERT INTO " + nameTable + " (" + parametr +","+parametr2+ @") VALUES ('" + name + i.ToString() +"','"+rn.Next(5,10)+ @"')", con);
                 adapter.InsertCommand.ExecuteNonQuery();
             }
         }

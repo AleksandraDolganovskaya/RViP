@@ -54,6 +54,7 @@
     <Compile Include="ClassObjects\ListSpecClass.cs" />
     <Compile Include="ClassObjects\SpecialtyClass.cs" />
     <Compile Include="ClassObjects\SubjectClass.cs" />
+    <Compile Include="ListsStudents.cs" />
     <Compile Include="Формы\Abiturient.cs">
       <SubType>Form</SubType>
     </Compile>

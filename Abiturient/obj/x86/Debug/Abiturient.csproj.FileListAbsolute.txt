@@ -86,6 +86,14 @@ C:\Users\Шурупчик\Documents\RViP\repo\Abiturient\obj\x86\Debug\Abiturien
 C:\Users\Шурупчик\Documents\RViP\repo\Abiturient\obj\x86\Debug\Abiturient.csproj.GenerateResource.Cache
 C:\Users\Шурупчик\Documents\RViP\repo\Abiturient\bin\Debug\Abiturient.exe
 C:\Users\Шурупчик\Documents\RViP\repo\Abiturient\bin\Debug\Abiturient.pdb
+<<<<<<< HEAD
+=======
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\bin\Debug\Abiturient.exe.config
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.exe
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.pdb
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\bin\Debug\Abiturient.exe
+C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\bin\Debug\Abiturient.pdb
+>>>>>>> f8566856e5fe2d4fa4046a7c06ab9ded8b51a060
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.csprojResolveAssemblyReference.cache
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Abiturient.resources
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Form1.resources
@@ -96,4 +104,7 @@ C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abit
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Stud_Subj.resources
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.Subject.resources
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\Шурупчик\Documents\RViP_abit\RViP\Abiturient\obj\x86\Debug\Abiturient.exe
+=======
+>>>>>>> f8566856e5fe2d4fa4046a7c06ab9ded8b51a060
